@@ -57,3 +57,17 @@
 ## 15/kubectl get pods
 
 ## 16\ delete minikube cluster
+
+## 17\ add Worker Nodes
+
+### a\ From the cluster in AWS go to Compute section, then chose Node Group
+
+### b\ Give the node group name
+
+### c\ Add IAM role for the nodes, in ordrer to give the nodes some permissions
+
+#### 1\ Go to IAM page, choose create role, then check EC2, then search for EKS worker and CNI, and ec2containerreg,then next, make sure that the three selected are there , then add name for the role, then cleck create role
+
+## 18\ Choose new role in your cluster page, then cleck next, then choose t3.small, we stay with two nodes for this example, then next,next, then creat, then wait the process to be fished
+
+## 19\ Now the cluster is up and running, and it has a newtwork setup for it, with all the kubernetes tools install on them, with all that, now our cluster is setup
